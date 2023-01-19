@@ -1,0 +1,231 @@
+/* Fonts */
+@font-face {
+	font-family: 'TT Lakes';
+	src: url('TTLakes-Regular.eot');
+	src: local('../fonts/TT Lakes Regular'), local('TTLakes-Regular'),
+			url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/TTLakes-Regular.woff') format('woff'),
+			url('../fonts/TTLakes-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes';
+	src: url('TTLakes-Medium.eot');
+	src: local('../fonts/TT Lakes Medium'), local('TTLakes-Medium'),
+			url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/TTLakes-Medium.woff') format('woff'),
+			url('../fonts/TTLakes-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes';
+	src: url('TTLakes-Bold.eot');
+	src: local('../fonts/TT Lakes Bold'), local('TTLakes-Bold'),
+			url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/TTLakes-Bold.woff') format('woff'),
+			url('../fonts/TTLakes-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'TT Lakes', sans-serif;
+	color: #1B1C21;
+	background-color: #F2F2F2;
+}
+
+button {
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.icon {
+	margin-left: 16px;
+	transition: opacity .3s;
+}
+
+.icon:first-child {
+	margin: 0;
+}
+
+.icon:hover,
+.icon:active {
+	opacity: .4;
+}
+
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 0 24px;
+	min-width: 320px;
+	min-height: 100vh;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	background-color: #FFF;
+	box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+
+.sidebar__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 26px;
+	padding: 19px 0;
+}
+
+.sidebar__menu-list {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar__menu-item {
+	margin-bottom: 32px;
+}
+
+.sidebar__menu-link {
+	display: block;
+	position: relative;
+
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: #1B1C21;
+	text-decoration: none;
+
+	transition: color .3s;
+}
+
+.sidebar__menu-link:before {
+	content: "";
+	width: 4px;
+	height: 32px;
+
+	position: absolute;
+	left: -24px;
+	top: 0;
+
+	background-color: transparent;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	transition: background-color .3s;
+}
+
+.sidebar__menu-link:hover,
+.sidebar__menu-link:active,
+.sidebar__menu-link:focus {
+	color: #7E7E82;
+}
+
+.sidebar__menu-link:hover:before,
+.sidebar__menu-link:active:before,
+.sidebar__menu-link:focus:before {
+	background-color: #41F6D7;
+}
+
+.sidebar__footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar__icons {
+	margin-bottom: 16px;
+	margin-top: 60px;
+}
+
+.sidebar__mail {
+	margin-bottom: 12px;
+
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: #1B1C21;
+	text-decoration: none;
+
+	transition: color .4s;
+}
+
+.sidebar__phone {
+	margin-bottom: 40px;
+
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.6px;
+	color: #1B1C21;
+	text-decoration: none;
+
+	transition: color .4s;
+}
+
+.sidebar__lang {
+	margin-bottom: 32px;
+
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: #1B1C21;
+}
+
+.sidebar__lang-button {
+	margin-right: 7px;
+	transition: color .3s;
+}
+
+.sidebar__lang-button:last-child {
+	margin: 0;
+}
+
+.sidebar__mail:hover,
+.sidebar__mail:focus,
+.sidebar__phone:hover,
+.sidebar__phone:focus,
+.sidebar__lang-button:hover,
+.sidebar__lang-button:focus {
+	color: #7E7E82;
+}
+
+.sidebar__mail:active,
+.sidebar__phone:active,
+.sidebar__lang-button:active {
+	color: #FF3E79;
+}
+
+
